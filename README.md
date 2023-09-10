@@ -1,2 +1,2 @@
 # troynoir1.github.io
-scratch pad for building web
+i can write anything here, but most importantly, does this work
