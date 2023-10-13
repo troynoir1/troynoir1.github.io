@@ -2,62 +2,59 @@ body{
 
 
 font-family:sans-serif;
-font-size:17px;
+font-size:12px;
 
 background-color:#FFE4E1;
 margin:0;
 padding:0;
 font-weight:400;
+text-align: center;
+
 
 }
 
 .outer{
-	text-align:center;
+	/*text-align:left;*/
+	border:.5px solid;
+display:inline-block;
+
 
 }
 
 .page{
-	margin-top:20px;
+	margin-top:10px;
 	background-color:beige;
-
+ padding:0px ;
 	max-width:1200px;
-	width:100%;
+	width:relative;
 	height:98vh;
-	display:inline-block;
+
 	border:.5px solid;
 	border-color:#F5F5F5 ;
+	display:inline-block;
 
 }
 
-.page2{
-   max-width:100%;
-   height:99vh;
-   display: center;
-   text-align:right;
-   padding:40px;
-   background-color: white;
-   font-family:"u+2006",helvetica monospaced pro ;
-   flex-direction: right;
-   font-size: 42px;
-   justify-content: flex-end;
-   /*align-items: center;*/
- }
 
  .logo2{
-display: inline-block;
-max-width:100%;
-flex-direction: left;
-padding:10px;
+max-width: 100%;
+height: 0;
+/*border:1px solid;*/
+display:inline;
+
+
 
 }
 
 
 a{
   color:black;
-  font-size:16px;
-  font-weight: bold;
+  font-size:15px;
+  font-weight:30px ;
   text-decoration: none;
-  margin-right:10px;
+  margin-right:22px;
+  /*border:1px solid;*/
+  text-align: center;
 }
 
 a:hover {
@@ -68,17 +65,28 @@ a:hover {
 }
 .nav{
   font-family: sans-serif;
-   margin-left:10px;
-   margin-top:10px;
-   text-align: right;
+   margin-left:40px;
+   margin-right:40px;
+   padding-inline-start: 0px;
+   padding: 10px;
+   padding-top: 10px;
+   padding-bottom:10px ;
+   margin-top:30px;
+   text-align: left;
+   /*border:1px solid;*/
+      
 }
 
 .text{
    font-family: sans-serif;
     color:black;
-    font-size: 42px;
-    font-weight: bold;
+    font-size: 12px;
+    font-weight: regular;
     display: inline-block;
+    border: 10px solid;
+    border-spacing: 20px;
+    padding-right: 20px;
+    
    
 
 }
@@ -88,9 +96,43 @@ a:hover {
 	flex-direction: row;
 	flex-wrap: nowrap;
 	background-color:#fff ;
-}
+	 /*border:1px solid;*/
 
-.navbar{
+}
+ /*<======hero image starts here======>*/
+
+#navbar img{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	
+	justify-content: flex-start;
+	flex-grow: 1;
+	/*text-align: left;
+	border:1px solid;*/
+
+}
+/*<======hero image ends here======>*/
+
+
+/*
+.nav{
+	padding-right:100px;
+	border:1px solid;
+
+}
+*/
+#navright{
+	position: flex-start;
+	margin:200px;
+	display: inline;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	flex-grow: 1;
+
+	}
+	
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -98,21 +140,12 @@ a:hover {
 	justify-content: flex-start;
 	flex-grow: 1;
 	text-align: left;
-	
-
-}
-
-.nav{
-	padding-right:20px;
-
-}
-
-.navright{
-	margin-left:auto;
+	border:1px solid;
 }
 
 .logo{
-	margin:10px;
+
+	margin:50px;
 
 }
 
@@ -124,10 +157,11 @@ a:hover {
 	flex-direction: row;
 	flex-wrap: nowrap;
 	text-align: center;
+	/*border:1px solid;*/
 
 }
 
-.menu{
+#menu{
 	display: none;
 }
 
@@ -156,26 +190,33 @@ a:hover{
 
 	body{
 		background-color: #0018a8;
-
 	}
 
 	.page{
 		max-width:480px;
    }
 
-.menu{
+#menu{
 	display: inline-block;
+	padding:0px;
+	padding-bottom:0px ;
 }
 
-.menu img{
+a {
+	display: none;
+}
+
+/*.menu img{
 	width: 20px;
 	padding:10px;
-}
+}*/
 
 #menu img{ 
-	width: 40px;
+	width: 25px;
 	cursor: pointer;
-	text-align: left;
+	text-align: ;
+	padding:3px;
+	padding-bottom:0px ;
 }
 
 #menuoverlay{
@@ -191,11 +232,11 @@ a:hover{
 	text-align: center; 
 }
 
-.innermenu{
+#innermenu{
 	margin-top: 50px;
 }
 
-.innermenu div{
+#innermenu div{
 	padding-bottom: 50px;
 }
 
@@ -203,20 +244,25 @@ a:hover{
 	position: absolute;
 	top:10px;
 	right: 10px;
-	font-size: 60px;
+	font-size: 40px;
 }
 
-.logo{
-	display:none; 
+#logo2{
+	display: none; 
 }
 
-.navbar{
-	display: none;
+#navbar{
+	display: inline;
+	text-align: center;
+
 }
 
 
+#navright{
+	display: none; 
 }
 
+	}
 @media screen and (min-width:850px) and (max-width:1250px){
 
 
@@ -228,18 +274,22 @@ body{
 	max-width:800px;
    }
 
+   .logo{
+	margin:5px;
 }
-#navbar{
-	display: flex;
+#navright{
+	margin:100px;
+	display: inline;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	align-items: center;
 	justify-content: flex-start;
 	flex-grow: 1;
-	text-align: left;
-	
+
+	}
+
 
 }
+
 
    @media screen and (min-width:1450px){
 	body{
@@ -249,4 +299,15 @@ body{
 .page{
 	max-width:1400px;
    }
+
+   #navright{
+	position: relative;
+	margin:300px;
+	display: inline;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	flex-grow: 1;
+
+	}
 }
