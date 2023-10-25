@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>scroll</title>
+<style>
+ .page_content_stretch {
+   /*border: 1px solid red;*/
+   height: 3000px;
+   background: black;
+   font-style: san-serif;
+  
+ }
+ .scale_me {
+  margin-block: 50px;
+   position: fixed;
+   color:blue;
+   top: 50%;
+   left: 50%;
+   /*transform-origin: right right ;*/
+   transform: translate(-50%, -50%) scale(1, 1);
+ }
+
+ .scale_me img{
+  width: 100%;
+  transform-origin: center center ;
+  position: fixed;
+   transform: translate(-50%, -50%) scale(1, 1);
+    }
+
+.scale_me {
+  text-transform: uppercase;
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<p><div class="scale_me" id="scaleme"><img src="img/kikiindabooth.jpg" />sothis needs</div><br></p>
+
+<div class="page_content_stretch"></div>
+
+<!--JavaScript to Handle what happens as the page is scrolled. -->
+<script>
+/* ASSIGN A FUNCTION TO THE PAGE AS IT SCROLLS */
+document.body.onscroll = function(event) {
+    var scrollposition = window.pageYOffset;
+    var scalesize = 1 + scrollposition * 0.01;
+    document.getElementById("scaleme").style.transform = "translate(-50%, -50%) scale(" + scalesize + ")";
+};
+</script>
+</body>
+</html>
