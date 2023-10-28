@@ -1,0 +1,93 @@
+
+body{
+  margin:0;  
+  padding:0;
+ display: center;
+
+ font-family:"u+2006",helvetica monospaced pro ;
+ font-size: 12px;
+
+}
+.outer{
+   max-width: 100%;
+   display: inline-block;
+   text-align: right;
+
+}
+.banner{
+        display: inline-block;
+        max-width:100%;
+        flex-grow: 1;
+        flex-direction: center;
+        width:100%;
+}
+
+.page{
+   max-width:100%;
+   height:99vh;
+   display: center;
+   text-align:right;
+   padding:40px;
+   background-color: white;
+   font-family:"u+2006",helvetica monospaced pro ;
+   flex-direction: right;
+   font-size: 42px;
+   justify-content: flex-end;
+   /*align-items: center;*/
+
+
+}
+
+.logo{
+display: inline-block;
+max-width:100%;
+flex-direction: left;
+padding:10px;
+
+}
+
+
+.events{
+color: #0018a8;
+
+}
+
+
+a{
+  color:black;
+  font-size:16px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right:10px;
+}
+
+a:hover {
+  color:red;  
+ }
+  a:active {
+  color:#CCC;
+}
+.nav{
+  font-family: sans-serif;
+   margin-left:10px;
+   margin-top:10px;
+   text-align: right;
+}
+
+.text{
+   font-family: sans-serif;
+    color:black;
+    font-size: 42px;
+    font-weight: bold;
+    display: inline-block;
+   
+
+}
+
+
+
+
+
+.button{
+  
+	  }
