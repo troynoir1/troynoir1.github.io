@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Filters</title>
+
+	<style>
+
+		.outer{
+			background-color: #00FFFF;
+		}
+    
+		.page{
+			text-align: center;
+		}
+
+
+    .my_filter{
+    max-width: 1400px; 
+    height: 100vh;
+  	position: relative;
+  -webkit-filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.5));
+
+  					filter: contrast(150%) brightness(130%) saturate(85%);
+}
+
+
+
+
+
+    .my_filter:hover{
+
+      animation: 1s myfilteranimation forwards;
+
+    }
+
+
+
+
+     @keyframes myfilteranimation{
+      
+	      100%{
+	       -webkit-filter: drop-shadow(20px 20px 30px rgb(0 0 0 / 5));
+  							
+	       }
+
+     }
+
+
+
+
+	</style>
+</head>
+<body>
+
+	<div class="outer">
+		<div class="page">
+
+<img class="my_filter" src="img/ushades800x600.jpg" alt="trppy">
+</div>
+</body>
+</html>
