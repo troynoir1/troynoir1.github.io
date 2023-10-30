@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transitions</title>
+
+   
+
+   <style>
+
+
+   	body{
+   		font-family: sans-serif;
+   		font-size:60px;
+   		color:white;
+   	}
+
+
+    .page{
+        background-color: black;
+        max-width: 1200vw;
+        height: 98vh;
+        text-align: center;
+        padding-block: 20vh;
+
+
+
+
+
+    }
+   	.cardholder{
+        display: inline-block;
+       
+
+
+   	}
+      
+    .card{
+    	position: relative;
+       background-color:black;
+       display: inline-block;
+    }
+
+    .card img{
+
+      width:100%;
+      height:auto;
+      opacity: 100%;
+    }
+
+
+    .center {
+
+     padding: 15% 0;
+     text-align: center;
+    }
+
+
+    .card_overlay{
+    	position:absolute;
+    	background-color: black;
+    	width:100%;
+    	height:100%;
+         text-align: center;
+    	transition: .5s ease;
+
+    	
+
+    }
+
+
+    .card:hover .card_overlay{
+
+    	opacity: .0;
+
+
+    }
+
+    .card_text{
+    	margin:0;
+    }
+
+
+
+   </style>
+
+</head>
+<body>
+
+
+
+<div class="page">
+	<div class="cardholder">
+       <div class="card">
+       	  <div class="card_overlay"><p class="center">WHO?</p></div>
+       	  <img src="img/trippyswirl800x600.jpg" alt="trippy swirl">
+       </div>
+	</div>
+
+</body>
+</html>
